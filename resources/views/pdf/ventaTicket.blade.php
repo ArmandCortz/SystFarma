@@ -687,7 +687,7 @@
         <img class="img" src="img/logo.png" alt="">
     </div>
     <h3 class="text-center">Programacion 3</h3>
-    <h5 class="text-center">RUC 10458000888</h5>
+    <h5 class="text-center">RS 10458000888</h5>
     <h5 class="text-center">demo@demo.com</h5>
     <div class="border-bottom"></div>
     <div>
