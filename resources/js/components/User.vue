@@ -63,11 +63,6 @@
 							<tr>
 								<th>Opciones</th>
 								<th>Nombre</th>
-								<th>Tipo Documento</th>
-								<th>Número</th>
-								<th>Direción</th>
-								<th>Teléfono</th>
-								<th>Email</th>
 								<th class="d-none">Sueldo</th>
 								<th>Usuario</th>
 								<th>Rol</th>

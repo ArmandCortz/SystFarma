@@ -70,11 +70,6 @@
 							<tr>
 								<th>Opciones</th>
 								<th>Nombre</th>
-								<th>Tipo Documento</th>
-								<th>Número</th>
-								<th>Dirección</th>
-								<th>Teléfono</th>
-								<th>Email</th>
 								<th>Estado</th>
 							</tr>
 						</thead>
