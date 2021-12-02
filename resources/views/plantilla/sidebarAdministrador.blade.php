@@ -73,9 +73,6 @@
             <li @click="menu=14" class="nav-item">
                 <a class="nav-link" href="#"><i class="fas fa-book"></i> Ayuda <span class="badge badge-danger">PDF</span></a>
             </li>
-            <li @click="menu=15" class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-info"></i> Acerca de...<span class="badge badge-info">IT</span></a>
-            </li>
         </ul>
     </nav>
     <button class="sidebar-minimizer brand-minimizer" type="button"></button>

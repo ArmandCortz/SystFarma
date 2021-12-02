@@ -63,14 +63,31 @@
             {{-- <consultaventa></consultaventa> --}}
             <h3>consultaventa</h3>
         </template>
+        <center>
 
         <template v-if="menu==14">
+            <style type="text/css">
+                #portapdf {
+                    width: 500px;
+                    height: 500px;
+                    border: 1px solid #696767;
+                    margin: 0 auto;
+                }
+                </style>
             <h1>Ayuda</h1>
-        </template>
+            <center>
+               <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                <div id="portapdf">
+                    <object data="{{ asset("pdf/administrador.pdf")}}" type="application/pdf" width="500px" height="500px"></object>
+                </div>  
+            </p> 
 
-        <template v-if="menu==15">
-            <h1>Acerca de</h1>
+            </center>    
+            
         </template>
+    </center>
+
+
 @elseif (Auth::user()->idrol == 2)
 <template v-if="menu==0">            
     <dashboard></dashboard> 
@@ -89,13 +106,23 @@
         <h3>consultaventa</h3>
     </template>
     <template v-if="menu==14">
+        <style type="text/css">
+            #portapdf {
+                width: 500px;
+                height: 500px;
+                border: 1px solid #696767;
+                margin: 0 auto;
+            }
+            </style>
+            <center>
         <h1>Ayuda</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis ut quisquam distinctio repellendus cupiditate aperiam sint dolore, omnis cum minus accusamus mollitia? Delectus reiciendis odio impedit laborum qui iusto.
+            <div id="portapdf">
+                <object data="{{ asset("pdf/vendedor.pdf")}}" type="application/pdf" width="500px" height="500px"></object>
+            </div>
+        </p>
+        <center>
     </template>
-    
-    <template v-if="menu==15">
-        <h1>Acerca de</h1>
-    </template>
-
 @elseif (Auth::user()->idrol == 3)
     <template v-if="menu==1">
         <categoria></categoria>
@@ -123,14 +150,26 @@
         {{-- <consultaingreso></consultaingreso> --}}
         <h3>consultaingreso</h3>
     </template>
-    
+    <center>    
     <template v-if="menu==14">
+        <style type="text/css">
+            #portapdf {
+                width: 500px;
+                height: 500px;
+                border: 1px solid #696767;
+                margin: 0 auto;
+            }
+            </style>
         <h1>Ayuda</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis ut quisquam distinctio repellendus cupiditate aperiam sint dolore, omnis cum minus accusamus mollitia? Delectus reiciendis odio impedit laborum qui iusto.
+            
+        </p>
+        <div id="portapdf">
+            <object data="{{ asset("pdf/almacenero.pdf")}}" type="application/pdf" width="500px" height="500px"></object>
+        </div>
     </template>
+</center>
 
-    <template v-if="menu==15">
-        <h1>Acerca de</h1>
-    </template>
 @else
 
 @endif
