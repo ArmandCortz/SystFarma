@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
         ]);
         DB::table('empleados')->insert([
             "id" => "3",
-            "nombre" => "vendedro"
+            "nombre" => "vendedor"
         ]);
 
         //insertamos usuarios
