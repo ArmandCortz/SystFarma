@@ -74,7 +74,7 @@
 
     </div>
     <footer class="app-footer">
-        <span><a href="#">Programacion 3</a> &copy; 2021</span>
+        <span><a>&copy; Copyright 2021</a></span>
         <span class="ml-auto">Desarrollado por <a href="#">Grupo 5 Programacion 3</a></span>
     </footer>
 
