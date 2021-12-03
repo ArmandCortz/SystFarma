@@ -68,25 +68,29 @@
         <template v-if="menu==14">
             <style type="text/css">
                 #portapdf {
-                    width: 500px;
-                    height: 500px;
                     border: 1px solid #696767;
                     margin: 0 auto;
                 }
                 </style>
             <center>
                 <main class="main">
-                    <div class="container-fluid">
-                        <h1 class="text-center">Ayuda</h1>
-                        <h3 class="text-center">
-                            Para obtener ayuda sobre como utilizar descarga el manual dando clik al boton abrir
-                        </h3>
-                        <div id="portapdf">
-                            <object data="{{ asset("pdf/administrador.pdf")}}" type="application/pdf" width="500px" height="500px"></object>
-                        </div> 
-                        
+                <div class="container-fluid">
+                    <div class="card">
+                    <div class="card-body col-12 mt-10">
+                        <div class="container-fluid">
+                            <h3 class="text-center">
+                                Para obtener ayuda sobre como utilizar el sistema lee el manual a continuación:
+                            </h3>
+                            <br>
+                            <div id="portapdf" >
+                            <object data="{{ asset("pdf/administrador.pdf")}}" type="application/pdf" width="100%" height="500px"></object>
+                            </div> 
+                            
+                        </div>
                     </div>
-                </main>
+                </div>
+                </div>
+            </main>
             </center>    
             
         </template>
@@ -121,19 +125,30 @@
             </style>
             <center>
                 <main class="main">
-                <div class="container-fluid">
-                    <h1 class="text-center">Ayuda</h1>
-                    <h3 class="text-center">
-                        Para obtener ayuda sobre como utilizar descarga el manual dando clik al boton abrir
-                    </h3>
-                    <div id="portapdf">
-                        <object data="{{ asset("pdf/vendedor.pdf")}}" type="application/pdf" width="500px" height="500px"></object>
+                    <div class="container-fluid">
+                        <div class="card">
+                            <div class="card-body col-12 mt-10">
+                                <div class="container-fluid">
+                                    <h3 class="text-center">
+                                        Para obtener ayuda sobre como utilizar el sistema lee el manual a continuación:
+                                    </h3>
+                                    <br>
+                                    <div id="portapdf" >
+                                    <object data="{{ asset("pdf/vendedor.pdf")}}" type="application/pdf" width="100%" height="500px"></object>
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </main>
+                </main>
             <center>
     </template>
 @elseif (Auth::user()->idrol == 3)
+    <template v-if="menu==0">            
+        <dashboard></dashboard> 
+        {{-- <venta></venta> --}}
+    </template>
     <template v-if="menu==1">
         <categoria></categoria>
         
@@ -163,22 +178,26 @@
         <template v-if="menu==14">
             <style type="text/css">
                 #portapdf {
-                    width: 500px;
-                    height: 500px;
                     border: 1px solid #696767;
                     margin: 0 auto;
                 }
                 </style>
-            
             <main class="main">
                 <div class="container-fluid">
-                    <h1 class="text-center">Ayuda</h1>
-                    <h3 class="text-center">
-                        Para obtener ayuda sobre como utilizar descarga el manual dando clik al boton abrir
-                    </h3>
-                    <div id="portapdf">
-                        <object data="{{ asset("pdf/almacenero.pdf")}}" type="application/pdf" width="500px" height="500px"></object>
+                    <div class="card">
+                    <div class="card-body col-12 mt-10">
+                        <div class="container-fluid">
+                            <h3 class="text-center">
+                                Para obtener ayuda sobre como utilizar el sistema lee el manual a continuación:
+                            </h3>
+                            <br>
+                            <div id="portapdf" >
+                            <object data="{{ asset("pdf/almacenero.pdf")}}" type="application/pdf" width="100%" height="500px"></object>
+                            </div> 
+                            
+                        </div>
                     </div>
+                </div>
                 </div>
             </main>
         </template>
