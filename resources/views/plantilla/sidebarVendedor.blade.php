@@ -22,7 +22,7 @@
                 </ul>
             </li>
             
-            <li class="nav-item nav-dropdown">
+            {{-- <li class="nav-item nav-dropdown">
                 <a class="nav-link nav-dropdown-toggle" href="#"><i class="fas fa-chart-area"></i> Reportes</a>
                 <ul class="nav-dropdown-items">
                     
@@ -30,7 +30,7 @@
                         <a class="nav-link" href="#"><i class="icon-chart"></i> Reporte Ventas</a>
                     </li>
                 </ul>
-            </li>
+            </li> --}}
             <li @click="menu=14" class="nav-item">
                 <a class="nav-link" href="#"><i class="fas fa-book"></i> Ayuda <span class="badge badge-danger">PDF</span></a>
             </li>
